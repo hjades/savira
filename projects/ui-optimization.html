@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Lobby UI Optimization - Savira Suntoro</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Savira Suntoro</h1>
+            <p>Strategic Product Manager</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <a href="../index.html" class="back-link">← Back to Portfolio</a>
+
+        <section class="project-card">
+            <img src="../images/lobby-ui.jpg" alt="Game Lobby UI" class="project-image">
+            <div class="project-card-content">
+                <h2>Game Lobby UI Optimization</h2>
+                <h3>Enhancing User Experience Through Data-Driven Design</h3>
+
+                <div class="section-columns">
+                    <div class="section-column">
+                        <div class="challenge-solution">
+                            <h4>Business Context</h4>
+                            <p>Our game lobby is the primary touchpoint for users to discover and select games.
+                                Analytics revealed that users were spending less time in the lobby and engagement with
+                                newer games was below target. This directly impacted our key business metrics: game
+                                discovery, session time, and monetization opportunities.</p>
+                            <p>This project aligned with our Q2 strategic initiative to improve discovery and session
+                                metrics across our entire game portfolio.</p>
+                        </div>
+                    </div>
+                    <div class="section-column">
+                        <div class="challenge-solution">
+                            <h4>User Research Insights</h4>
+                            <p>Using heatmap analysis (Hotjar) and user session recordings, we identified key pain
+                                points:</p>
+                            <ul>
+                                <li>Users struggled to distinguish between game categories</li>
+                                <li>Interactive elements were difficult to locate</li>
+                                <li>Our primarily 45+ demographic found text and buttons too small</li>
+                                <li>Visual hierarchy was unclear, causing cognitive overload</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="persona">
+                    <div class="persona-header">
+                        <div class="persona-avatar">👴</div>
+                        <div class="persona-details">
+                            <h3 class="persona-name">Pak Hendra, 58</h3>
+                            <p class="persona-title">Casual Player, Jakarta</p>
+                        </div>
+                    </div>
+                    <div class="persona-content">
+                        <p><strong>Goals:</strong> Play familiar games quickly, discover new games that are similar to
+                            ones he already enjoys, easily navigate between features.</p>
+                        <p><strong>Pain Points:</strong> "The buttons are too small and I often press the wrong one.
+                            There's too much happening on the screen, and I can't easily find my favorite games."</p>
+                        <p><strong>Usage Habits:</strong> Plays 4-5 times per week for 30-45 minutes, primarily on a
+                            tablet device in the evening.</p>
+                    </div>
+                </div>
+
+                <div class="before-after">
+                    <div class="before-after-item">
+                        <h4>Before</h4>
+                        <img src="../images/lobby-before.jpg" alt="Before UI" class="before-after-image">
+                        <p>The original design featured:</p>
+                        <ul>
+                            <li>Overly prominent section borders creating visual clutter</li>
+                            <li>Small touch targets (buttons 32px × 32px)</li>
+                            <li>Low contrast text (1.8:1 ratio)</li>
+                            <li>Inconsistent navigation patterns</li>
+                        </ul>
+                    </div>
+
+                    <div class="before-after-item">
+                        <h4>After</h4>
+                        <img src="../images/lobby-after.jpg" alt="After UI" class="before-after-image">
+                        <p>The redesigned UI included:</p>
+                        <ul>
+                            <li>Simplified visual hierarchy with subtle section indicators</li>
+                            <li>Enlarged touch targets (56px × 56px)</li>
+                            <li>Improved text contrast (4.5:1 ratio)</li>
+                            <li>Consistent placement of navigation elements</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tab-container">
+                    <div class="tab-buttons">
+                        <button class="tab-button active">Solution Strategy</button>
+                        <button class="tab-button">Design Process</button>
+                        <button class="tab-button">Implementation Challenges</button>
+                    </div>
+
+                    <div class="tab-content active">
+                        <h4>Solution Strategy</h4>
+                        <p>We approached this redesign with three key principles:</p>
+                        <ol>
+                            <li><strong>Accessibility First:</strong> Designing for our older demographic meant
+                                prioritizing larger touch targets, improved contrast, and simplified interactions.</li>
+                            <li><strong>Visual Hierarchy:</strong> Creating clear distinction between primary actions
+                                (game selection) and secondary actions (settings, profile) through size, color, and
+                                position.</li>
+                            <li><strong>Incremental Testing:</strong> Instead of a complete overhaul, we tested
+                                individual elements with 10% of users to validate improvements before full
+                                implementation.</li>
+                        </ol>
+                        <p>I created a prioritization matrix to determine which UI elements would deliver the highest
+                            impact relative to development effort, focusing our initial sprints on the highest-value
+                            improvements.</p>
+                    </div>
+
+                    <div class="tab-content">
+                        <h4>Design Process</h4>
+                        <p>The redesign went through multiple iterations:</p>
+                        <ol>
+                            <li><strong>User Journey Mapping:</strong> I worked with UX researchers to document the
+                                current lobby navigation flow and identify friction points.</li>
+                            <li><strong>Wireframing:</strong> Created low-fidelity mockups using Figma to test multiple
+                                layout options.</li>
+                            <li><strong>User Testing:</strong> Conducted remote testing sessions with 12 users across
+                                different age groups using InVision prototypes.</li>
+                            <li><strong>A/B Testing:</strong> Deployed three variants to test button size, placement,
+                                and color schemes with real users.</li>
+                            <li><strong>Iterative Refinement:</strong> Used heat mapping data to further optimize
+                                placement of high-value elements.</li>
+                        </ol>
+                    </div>
+
+                    <div class="tab-content">
+                        <h4>Implementation Challenges</h4>
+                        <p>The project faced several technical and organizational hurdles:</p>
+                        <ul>
+                            <li><strong>Technical Debt:</strong> The legacy codebase had inconsistent UI implementations
+                                requiring significant refactoring.</li>
+                            <li><strong>Cross-Platform Considerations:</strong> Ensuring a consistent experience across
+                                Android, iOS, and web versions required close collaboration with three different
+                                development teams.</li>
+                            <li><strong>Performance Concerns:</strong> Initial designs increased load times on older
+                                devices. I worked with engineering to optimize asset loading and reduce initial render
+                                time by 40%.</li>
+                            <li><strong>Stakeholder Alignment:</strong> Marketing wanted to maintain prominent placement
+                                for promotional content, which conflicted with our simplification goals. I conducted a
+                                workshop to align on user-centered metrics that satisfied both teams' objectives.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h4>My Strategic Contribution</h4>
+                <ul class="contribution-list">
+                    <li>Advocated for and secured executive buy-in by connecting UI improvements to business KPIs
+                        (engagement, retention, monetization)</li>
+                    <li>Created a data-informed prioritization framework to focus design and development resources on
+                        highest-impact areas</li>
+                    <li>Established a measurement plan with clear success metrics, tracking both leading indicators
+                        (click-through rates) and lagging indicators (session time)</li>
+                    <li>Led cross-functional collaboration between design, engineering, and QA teams to ensure cohesive
+                        implementation</li>
+                    <li>Implemented a phased rollout strategy to minimize risk and gather incremental feedback</li>
+                    <li>Developed an A/B testing strategy to validate improvements before full deployment</li>
+                </ul>
+
+                <div class="results">
+                    <h4>Results & Impact</h4>
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <p>Usability Score</p>
+                            <div class="number">+5%</div>
+                            <p>SUS methodology</p>
+                        </div>
+                        <div class="metric-card">
+                            <p>Game Discovery</p>
+                            <div class="number">+12%</div>
+                            <p>Non-favorite game plays</p>
+                        </div>
+                        <div class="metric-card">
+                            <p>Session Time</p>
+                            <div class="number">+8%</div>
+                            <p>Average daily engagement</p>
+                        </div>
+                        <div class="metric-card">
+                            <p>User Satisfaction</p>
+                            <div class="number">+15%</div>
+                            <p>NPS improvement</p>
+                        </div>
+                    </div>
+                    <p>Beyond the metrics, we observed significant qualitative improvements:</p>
+                    <ul>
+                        <li>Reduced support tickets related to UI navigation by 23%</li>
+                        <li>Improved discoverability of new games, helping our content strategy</li>
+                        <li>Created a more scalable UI framework that reduced future development time</li>
+                    </ul>
+                    <div class="quote">
+                        "The new lobby design makes it so much easier to find my games. Before, I would just play the
+                        same one or two games, but now I'm discovering new ones I hadn't tried before." - User feedback
+                        from post-launch survey
+                    </div>
+                </div>
+
+                <h4>Key Learnings</h4>
+                <ul>
+                    <li>Small UX improvements can drive significant business impact when focused on critical user
+                        journeys</li>
+                    <li>Cross-functional alignment is crucial - success required shared understanding across design,
+                        engineering, and business teams</li>
+                    <li>Progressive enhancement is more effective than complete redesigns for maintaining user comfort
+                        while improving experience</li>
+                    <li>Cultural considerations matter - Indonesian users had different navigation preferences than
+                        Taiwanese users</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <section class="contact-section">
+        <div class="container">
+            <h2>Contact Information</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>Email:</span>
+                    <a href="mailto:msaviras@outlook.com">msaviras@outlook.com</a>
+                </div>
+
+                <div class="contact-item">
+                    <span>Phone:</span>
+                    <span>+886 979 033 651</span>
+                </div>
+
+                <div class="contact-item">
+                    <span>LinkedIn:</span>
+                    <a href="https://linkedin.com/in/savirasuntoro">linkedin.com/in/savirasuntoro</a>
+                </div>
+            </div>
+            <p class="thank-you">Thank you for reviewing my portfolio</p>
+        </div>
+    </section>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
